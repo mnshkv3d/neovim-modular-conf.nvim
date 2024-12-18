@@ -31,6 +31,17 @@ return {
       statusline.section_location = function()
         return '%2l:%-2v'
       end
+      require('mini.icons').setup()
+      require('mini.move').setup()
+      require('mini.pairs').setup()
+      require('mini.sessions').setup()
+      require('mini.starter').setup()
+      require('mini.git').setup()
+      require('mini.diff').setup()
+      require('mini.bracketed').setup()
+      require('mini.tabline').setup()
+      require('mini.trailspace').setup()
+
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,

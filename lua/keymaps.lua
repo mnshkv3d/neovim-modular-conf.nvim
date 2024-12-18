@@ -45,4 +45,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+--Personal keymaps
+vim.keymap.set('n', '<leader>x', ':bd<CR>', { desc = 'Close buffer' })
+vim.keymap.set('n', '<leader>W', ':w<CR>', { desc = 'Save current buffer' })
+vim.keymap.set('n', '<leader>o', ':Oil<CR>', { desc = 'Start Oil' })
+
 -- vim: ts=2 sts=2 sw=2 et
