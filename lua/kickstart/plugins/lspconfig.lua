@@ -196,11 +196,20 @@ return {
           -- capabilities = {},
           settings = {
             Lua = {
+              workspace = {
+                library = {
+                  -- 'C:/dev/love2d/library', -- Add Love2D library
+                  'C:/dev/Defold/defold_api',
+                },
+                -- userThirdParty = { 'C:/dev/love2d' },
+                checkThirdParty = 'Apply',
+              },
               completion = {
                 callSnippet = 'Replace',
               },
               diagnostics = {
                 globals = { 'vim' },
+                disable = { 'lowercase-global', 'undefined-global' },
               },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
               -- diagnostics = { disable = { 'missing-fields' } },
